@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Workbench</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class = "firstdiv">
+            <h1 id="Heading">My Workbench</h1>
+            <h2 id="SubHeading">Created by Arathy Krishna and Nikhil Jojy</h2>
+            <button class = "button" id="createbutton" type="submit" value="Create Folder">Create</button>
+            <button class = "button" id="joinbutton" type="submit" value="Create Folder">Join</button>
+            <script>
+                const create = document.getElementById("createbutton");
+                create.addEventListener("click",(e)=>{
+                    e.preventDefault();
+                    create.classList.add("animate");
+                    setTimeout(()=>{
+                        create.classList.remove("animate");
+                    }, 600)
+                });
+                const join = document.getElementById("joinbutton");
+                join.addEventListener("click",(q)=>{
+                    q.preventDefault();
+                    join.classList.add("animate");
+                    setTimeout(()=>{
+                        join.classList.remove("animate");
+                    }, 600)
+                });
+                document.getElementById("createbutton").addEventListener("click",function(){
+                    window.location.href="C:\\Users\\Asus\\OneDrive\\Desktop\\arathy project\\login.html";
+                });
+                document.getElementById("joinbutton").addEventListener("click",function(){
+                    window.location.href="C:\\Users\\Asus\\OneDrive\\Desktop\\arathy project\\join.html";
+                });
+            </script>
+        </div>
+    </body>
+</html>

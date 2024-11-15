@@ -1,0 +1,138 @@
+body{
+    background-color:#badad2;
+}
+
+button{
+    padding: 5px 20px;
+    position: relative;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-family: 'LEMON MILK light',sans-serif;
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    background-color: #0e3b43;
+    color: #D2fdff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover{
+    background-color: #D2fdff;
+    color: #0e3b43;
+}
+
+button:active{
+    transform: scale(.90);
+}
+
+#addBtn,#deleteBtn{
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    padding: auto;
+    padding: 0px 0px;
+}
+#addBtn{
+    position: absolute;
+    right: -30%;
+    top:6%;
+}
+#deleteBtn{
+    position: absolute;
+    right: -60%;
+    top:6%;
+}
+
+#addFoldername{
+    background-color:white;
+    border-radius: 4px;
+    border:2px solid #0e3b43;
+    padding: 0px 0px;
+    width: 130px;
+    height: 30px;
+    font-family: 'LEMON MILK light',sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+.file-manager{  
+    background-color:#f9f9f971;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-right: 20px;
+    position: relative;
+    left: 57vw;
+}
+
+.controls{
+    position: absolute;
+    top:20px;
+    right:29%;
+}
+
+#foldername{
+    position: absolute;
+    top:70px;
+    right:44%;
+}
+
+.name{
+    background-color:#f9f9f971;
+    position: relative;
+    width: 0vw;
+    height: 0vw;
+}
+
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    position: relative;
+    top: 40px;
+    left: 2vw;
+    width: 40vw;
+}
+
+#workspaceTitle {
+    margin: 0;
+    font-family: 'LEMON MILK light',sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+
+}
+
+.rename-btn {
+    background: none;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    color: #000;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+}
+
+#titleInput {
+    font-size: 2em;
+    border: 2px solid #0e3b43;
+    background-color: #badad2;
+    border-radius: 4px;
+    width: 30vw;
+    font-family: 'LEMON MILK light',sans-serif;
+}
+
+#titleInput:focus {
+    outline: none;
+}

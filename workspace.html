@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="workstyle.css">
+    <script src="workscript.js"></script> 
+    <title>Untitled Workbench</title>
+</head>
+
+<body>
+    <div style="display: flex;flex-wrap: wrap;">
+    <div class="name">
+        <div class="title-wrapper">
+            <h2 id="workspaceTitle">Untitled Workbench</h2>
+            <button class="rename-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                </svg>
+            </button>
+            <input type="text" id="titleInput" style="display: none;">
+        </div>
+    </div>
+    <div class="file-manager">
+        <div class="controls">
+            <button id="createFolder" onclick="addFoldername()">Folder</button>
+            <button id="createFile" onclick="addFilename()">File</button>
+        </div>
+        <div id="foldername"></div>
+    </div>
+    </div>
+</body>
+</html>
